@@ -1,0 +1,166 @@
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* h1,
+h2,
+h3,
+p {
+  margin: 0;
+} */
+
+/* header starts here */
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 4rem 0 3rem;
+  font-family: jacquespro;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+#logo-text{
+  margin-inline-start: -1.6rem;
+}
+nav ul{
+  display: flex;
+  gap: 3rem;
+}
+ul li{
+  list-style-type: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+li a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+li a{
+  text-decoration: none;
+}
+/* header stops here */
+
+/* Contact Us page starts here*/
+.contact_us {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  height: 85vh;
+  color: antiquewhite;
+  background-image: url(/images/bg-2.jpg);
+}
+.contact_us::after {
+  content: "";
+  position: absolute;
+  /* background-color: #3a194ff0; */
+  inset: 0;
+}
+.contact_list_item {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-left: 2rem;
+  color: var(--font-color);
+  z-index: 10;
+}
+.contact_list_item > h2 {
+  font-size: 5rem;
+  font-weight: 800;
+  padding-top: 1rem;
+  width: 80%;
+}
+.contact_list_item > p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: -7rem;
+}
+.contact_us_col_1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 1.3rem;
+  width: 50%;
+}
+.contact_us_col_1 > a {
+  color: var(--font-color);
+}
+.social-handles {
+    display: flex;
+}
+
+.social-handles > a {
+  color: var(--font-color);
+}
+
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 5rem 3rem 0 0;
+  padding: 1.5rem 2rem 0 2rem;
+  background-image: url("/image/contact_form_bg_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 1rem;
+  color: var(--font-color);
+  width: 35vw;
+  height: 85%;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.contact_us_col_2 {
+  z-index: 10;
+}
+.contact_form > input {
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  outline: 0;
+}
+.contact_form > textarea {
+  padding: 0 0.5rem;
+  width: 100%;
+  height: 43%;
+  outline: 0;
+}
+.contact_form > button {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: 5px solid #ca710b;
+  border-radius: 1rem;
+  color: var(--font-color);
+  padding: 1rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+/* ****************************************** */
+/* Footer starts here */
+
+#main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  background: #faa700;
+  font-weight: 700;
+}
