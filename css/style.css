@@ -289,7 +289,7 @@ li a{
   .product.shoe-left .product__image {
     float: left;
     shape-outside: url(../img/shoe-2.png);
-    margin: 0 0 0 -5em;
+    margin: 0 0 0 -3em;
     shape-margin: 2em;
   }
 }
@@ -322,6 +322,18 @@ li a{
   padding: 2rem 2rem;
   background: #faa700;
   font-weight: 700;
+}
+@media (max-width: 768px){
+.contact_col_1{
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-inline-start: -5rem;
+}
+.contact_col_2{
+  display: none;
+}
 }
 /* body{
     background-image: url("../images/phonee.jpg");
